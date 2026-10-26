@@ -1,0 +1,13 @@
+[package]
+name = "fintech-session-archive"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+axum = "0.7.9"
+reqwest = { version = "0.12.28", features = ["json", "multipart", "rustls-tls"], default-features = false }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+thiserror = "2.0.20"
+tokio = { version = "1.53.1", features = ["macros", "rt-multi-thread", "time", "net"] }
+percent-encoding = "2.3.2"

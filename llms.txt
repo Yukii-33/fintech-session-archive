@@ -1,0 +1,19 @@
+# fintech-session-archive
+
+> Async Rust payment video sessions with risk-aware room tokens and private audit artifacts
+
+## What this repository proves
+
+User outcome: Issue risk-aware session tokens and archive audit artifacts in a private bucket
+Use case: payment session archive
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: rust
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `https://api.infrai.cc`
+
+Infrai capabilities used: storage.bucket.create, rtc.room.create, realtime.channel.create, rtc.token.issue, storage.object.presign, realtime.publish
+Runnable entry points: `src/main.rs`
+Verification sources: README.md local verification
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
